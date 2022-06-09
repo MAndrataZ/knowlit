@@ -1,18 +1,12 @@
-Walgita.com (Website Rekomendasi Buku)
+Walgita (Website Rekomendasi Buku)
 
 Disusun oleh Kelompok 11 :
-Faza Salsabila (20051214055)
-Annisa Syasqia Zain (20051214062)
-Faradisa Fitra Buana (20051214071)
-Virelle Rachel Caroline Napitupulu (20051214099)
+1. Faza Salsabila (20051214055)
+2. Annisa Syasqia Zain (20051214062)
+3. Faradisa Fitra Buana (20051214071)
+4. Virelle Rachel Caroline Napitupulu (20051214099)
 
 Kelas : Sistem Informasi 2020 A
-
-
-
-
-
-
 
 
 
