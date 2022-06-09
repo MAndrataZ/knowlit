@@ -1,4 +1,4 @@
-Walgita (Website Rekomendasi Buku)
+Walgita.com (Website Rekomendasi Buku)
 
 Disusun oleh Kelompok 11 :
 1. Faza Salsabila (20051214055)
