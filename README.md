@@ -1,3 +1,15 @@
+Walgita (Website Rekomendasi Buku)
+
+Disusun oleh Kelompok 11 :
+1. Faza Salsabila (20051214055)
+2. Annisa Syasqia Zain (20051214062)
+3. Faradisa Fitra Buana (20051214071)
+4. Virelle Rachel Caroline Napitupulu (20051214099)
+
+Kelas : Sistem Informasi 2020 A
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
