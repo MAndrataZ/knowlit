@@ -41,26 +41,15 @@
                   <a class="nav-link active" aria-current="page" href="{{route('index')}}">Home</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="{{route('about')}}">About</a>
+                  <a class="nav-link" href="{{route('blog')}}">Genre Anda</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="{{route('blog')}}">Blog</a>
+                  <a class="nav-link" href="{{route('blog')}}">Cari Buku</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="{{route('about')}}">About</a>
                 </li>
               </ul>
-            
-
-              <div class="boxContainer mx-4">
-                <table class="elementsContainer">
-                  <tr>
-                    <td>
-                      <input type="text" placeholder="Search" class="search">
-                    </td>
-                    <td>
-                      <a href="#" class="mx-2"><img src="img/search.png" alt="" width="18" height="18"></a>
-                    </td>
-                  </tr>
-                </table>
-              </div>
 
               @auth
                   <div class="dropdown-item">
@@ -117,10 +106,9 @@
             <img src="img/logo knowlit.png" alt="" width="50">
           </div>
           <div class="col-md-3">
-            <h5>Address</h5>
-            <p class="py-2">Panjang Street no. 5,<br/> 
-              Kebon Jeruk<br/>
-              Jakarta 11530</p>
+            <h5>Sistem Buku Menggunakan Open Liblary API</h5>
+            <p class="py-2">Sumber API :<br/> 
+              https://openlibrary.org/developers/api</p>
           </div>
           <div class="col-md-3">
             <h5>Social Media</h5>
@@ -140,11 +128,11 @@
               <a class="telephone-number" href="#">
                 <img src="img/phone.png" alt="" style="float:left">
               </a>
-              <p class="phone">+6285545360779</p>
+              <p class="phone">08xx - xxxx - xxxx</p>
               <a class="email" href="#">
                 <img src="img/mail.png" alt="" style="float:left">
               </a>
-              <p class="mail">info@walgita.com</p>
+              <p class="mail">info@knowlit.com</p>
             </div>
           </div>
         </div>
