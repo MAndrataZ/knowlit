@@ -4,6 +4,7 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SigninController;
 use App\Http\Controllers\SignupController;
+use App\Http\Controllers\BookController;
 use App\Models\Category;
 
 /*
@@ -19,7 +20,10 @@ use App\Models\Category;
 
 Route::get('/', function () {
     return view('index', ["title" => "Home"]);
-}) ->name('index');
+})->name('index');
+
+Route::get('/books', [BookController::class, 'index'])->name('books.index');
+
 
 Route::get('/about', function () {
     return view('about', ["title" => "About"]);
