@@ -22,7 +22,7 @@
                     <h3>Best Seller</h3>
                 </div>
                 <div class="view">
-                    <a href="{{ route('signin') }}" class="view-all" style="text-decoration:none">View All</a>
+                    <a href="{{ route('signin') }}" class="view-all" style="text-decoration:none">Lihat Semua</a>
                 </div>
             </div>
 

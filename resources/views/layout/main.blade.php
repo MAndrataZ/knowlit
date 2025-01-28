@@ -44,7 +44,7 @@
                   <a class="nav-link" href="{{route('blog')}}">Genre Anda</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="{{route('blog')}}">Cari Buku</a>
+                  <a class="nav-link" href="{{route('cari')}}">Cari Buku</a>
                 </li>
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="{{route('about')}}">About</a>
@@ -106,7 +106,7 @@
             <img src="img/logo knowlit.png" alt="" width="50">
           </div>
           <div class="col-md-3">
-            <h5>Sistem Buku Menggunakan Open Liblary API</h5>
+            <h5>Sistem Buku "KnowLit" Menggunakan Open Liblary API</h5>
             <p class="py-2">Sumber API :<br/> 
               https://openlibrary.org/developers/api</p>
           </div>

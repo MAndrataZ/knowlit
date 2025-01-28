@@ -23,14 +23,15 @@
           </div>
           @endif
 
-          <h2 class="signin-welcome">Welcome to Walgita!</h2>
+          <h2 class="signin-welcome">Selamat datang di KnowLit!</h2>
+          <h5>Login untuk mendapatkan fitur lengkap</h5>
           <h3 class="py-3 signin-title">Sign in</h3>
           <form action="{{ route('signin') }}" method="post">
             @csrf
 
             <div class="top-margin py-4">
-                <label>E-mail Address<span class="text-danger">*</span></label>
-                <input type="email" name="email" id="email" class="form-control-signin @error('email') is-invalid @enderror" placeholder="Enter your e-mail address" autofocus required value="{{ old('email') }}">
+                <label>Alamat E-Mail<span class="text-danger">*</span></label>
+                <input type="email" name="email" id="email" class="form-control-signin @error('email') is-invalid @enderror" placeholder="Masukkan Alamat E-mail Anda" autofocus required value="{{ old('email') }}">
                 @error('email')
                 <div class="invalid-feedback">
                  {{ $message }}
@@ -39,18 +40,18 @@
             </div>
             <div class="top-margin">
                 <label>Password<span class="text-danger">*</span></label>
-                <input type="password" name="password" id="password" class="form-control-signin" placeholder="Enter your password" required>
+                <input type="password" name="password" id="password" class="form-control-signin" placeholder="Masukkan Password Anda" required>
             </div>
 
             <div class="py-3 form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
-                Remember me
+                Ingat Saya
               </label>
             </div>
 
             <div class="py-3">
-                  <b><a href="" style="text-decoration:none" class="forgot-password">Forgot Password?</a></b>
+                  <b><a href="" style="text-decoration:none" class="forgot-password">Lupa Password?</a></b>
             </div>
 
             <div class="py-4 signin-submit">
@@ -58,7 +59,7 @@
             </div>
 
             <div class="py-2 signup-order">
-              <p class="text-center text-muted register-question">Don't have an account? <a href="{{route('signup')}}" style="text-decoration:none" class="register-order">Sign up</a></p>
+              <p class="text-center text-muted register-question">Belum Punya Akun? <a href="{{route('signup')}}" style="text-decoration:none" class="register-order">Sign up</a></p>
             </div>
           </form>
         </div>

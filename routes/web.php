@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SigninController;
 use App\Http\Controllers\SignupController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\BookSearchController;
 use App\Models\Category;
 
 /*
@@ -28,6 +29,14 @@ Route::get('/', [BookController::class, 'index'])->name('index');
 Route::get('/about', function () {
     return view('about', ["title" => "About"]);
 }) ->name('about');
+
+
+// Route untuk menampilkan halaman pencarian
+Route::get('/cari', [BookSearchController::class, 'index'])->name('cari');
+
+// Route untuk mengambil data buku dari API
+Route::get('/search-books', [BookSearchController::class, 'search']);
+
 
 Route::get('/blog', function () {
     return view('blog', ["title" => "Blog"]);
