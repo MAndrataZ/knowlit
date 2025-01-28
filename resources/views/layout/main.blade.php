@@ -46,11 +46,6 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="{{route('cari')}}">Cari Buku</a>
                 </li>
-                @if(Auth::check())
-                <li class="nav-item mx-4">
-                  <a class="nav-link" href="#bookmark">Book Mark</a>
-                </li>
-                @endif
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="{{route('about')}}">About</a>
                 </li>
@@ -64,9 +59,8 @@
               
                     <div class="dropdown-content">
                         <ul class="links">
-                            <li><a class="dropdown-dashboard" href="{{route('bookfeed')}}">My Dashboard</a></li>
+                            <li><a class="dropdown-dashboard" href="{{route('bookfeed')}}">My BookMark</a></li>
                             <li><a class="dropdown-profile" href="{{route('profile')}}">Profile</a></li>
-                            <li><a class="dropdown-discover" href="{{route('discover')}}">Discover</a></li>
                             <div class="divider"></div>
                             <li>
                               <form action="/signout" method="post">
@@ -74,6 +68,7 @@
                                 <button type="submit" class="dropdown-signout" href="#">Sign out</button>
                               </form>
                             </li>
+                            <li><a class="dropdown-profile" href="{{route('about')}}">KnowLit V1.0</a></li>
                         </ul>
                     </div>
                 </div>

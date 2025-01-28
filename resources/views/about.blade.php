@@ -7,7 +7,7 @@
         <div class="container h-100">
             <div class="row about-bg">
                 <div class="col-12 banner-about-tagline">
-                    <h1>KELOMPOK TUBES PTI KAMI :</h1>
+                    <h1>KELOMPOK TUGAS BESAR PTI KAMI :</h1>
                 </div>
             </div>
         </div>
@@ -68,6 +68,9 @@
               <p style="color: black;">NIM: 10122481</p>
           </div>
       </div>
+
+      <br><br><br>
+      <h2 class="dashboard-title">KnowLit V1.0, Untuk Tugas Besar PTI</h2>
 
         </div>
     </div>
