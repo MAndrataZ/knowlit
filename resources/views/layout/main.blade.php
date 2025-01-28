@@ -46,6 +46,11 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="{{route('cari')}}">Cari Buku</a>
                 </li>
+                @if(Auth::check())
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#bookmark">Book Mark</a>
+                </li>
+                @endif
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="{{route('about')}}">About</a>
                 </li>
