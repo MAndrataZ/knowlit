@@ -41,7 +41,7 @@
                   <a class="nav-link active" aria-current="page" href="{{route('index')}}">Home</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="{{route('blog')}}">Genre Anda</a>
+                  <a class="nav-link" href="{{route('genre')}}">Genre Anda</a>
                 </li>
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="{{route('cari')}}">Cari Buku</a>

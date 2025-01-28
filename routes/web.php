@@ -6,6 +6,7 @@ use App\Http\Controllers\SigninController;
 use App\Http\Controllers\SignupController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\BookSearchController;
+use App\Http\Controllers\GenreController;
 use App\Models\Category;
 
 /*
@@ -36,6 +37,12 @@ Route::get('/cari', [BookSearchController::class, 'index'])->name('cari');
 
 // Route untuk mengambil data buku dari API
 Route::get('/search-books', [BookSearchController::class, 'search']);
+
+
+
+Route::get('/genre', [GenreController::class, 'index'])->name('genre');
+Route::get('/genre/search', [GenreController::class, 'search'])->name('genre.search');
+
 
 
 Route::get('/blog', function () {
