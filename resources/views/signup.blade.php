@@ -21,7 +21,7 @@
                 @enderror
               </div>
             <div class="top-margin">
-                <label for="email">E-mail Address<span class="text-danger">*</span></label>
+                <label for="email">Alamat Email<span class="text-danger">*</span></label>
                 <input type="email" name="email" id="email" class="form-control-signup @error('email') is-invalid @enderror" placeholder="Enter your e-mail address" required value="{{ old('email') }}">
                 @error('email')
                   <div class="invalid-feedback">
@@ -38,13 +38,7 @@
                   </div>
                 @enderror
               </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-              <label class="form-check-label-signup" for="flexCheckDefault">
-                I agree to Terms of Use & Privacy Policy
-              </label>
-            </div>
+              
 
             <div class="py-2 signup-submit">
               <button class="btn btn-action signup-submit-button" type="submit">Sign up</button>

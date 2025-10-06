@@ -7,6 +7,8 @@ use App\Http\Controllers\SignupController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\BookSearchController;
 use App\Http\Controllers\GenreController;
+use App\Http\Controllers\BookmarkController;
+use App\Http\Controllers\ProfileController;
 use App\Models\Category;
 
 /*
@@ -34,6 +36,7 @@ Route::get('/about', function () {
 
 // Route untuk menampilkan halaman pencarian
 Route::get('/cari', [BookSearchController::class, 'index'])->name('cari');
+Route::get('/book-detail', [BookSearchController::class, 'detail']);
 
 // Route untuk mengambil data buku dari API
 Route::get('/search-books', [BookSearchController::class, 'search']);
@@ -43,6 +46,14 @@ Route::get('/search-books', [BookSearchController::class, 'search']);
 Route::get('/genre', [GenreController::class, 'index'])->name('genre');
 Route::get('/genre/search', [GenreController::class, 'search'])->name('genre.search');
 
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/bookmark', [BookmarkController::class, 'index'])->name('bookmark');
+    Route::post('/bookmark/store', [BookmarkController::class, 'store'])->name('bookmark.store');
+    Route::get('/bookmark/{bookmark}/edit', [BookmarkController::class, 'edit'])->name('bookmark.edit');
+    Route::patch('/bookmark/{bookmark}', [BookmarkController::class, 'update'])->name('bookmark.update');
+    Route::delete('/bookmark/{bookmark}', [BookmarkController::class, 'destroy'])->name('bookmark.destroy');
+});
 
 
 Route::get('/blog', function () {
@@ -89,7 +100,6 @@ Route::get('/bookfeed2', function() {
 
 
 
-Route::get('/profile', function () {
-    return view('profile', ["title" => "Form Profile"]);
-}) ->middleware('auth') ->name('profile');
-
+Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth')->name('profile');
+Route::patch('/profile/update', [ProfileController::class, 'update'])->middleware('auth')->name('profile.update');
+Route::put('/profile/update-password', [ProfileController::class, 'updatePassword'])->middleware('auth')->name('profile.update_password');

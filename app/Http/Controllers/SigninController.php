@@ -25,7 +25,7 @@ class SigninController extends Controller
             return redirect()->intended('/');
         }
 
-        return back()->with('signinError', 'Sign in failed!');
+        return back()->with('signinError', 'Sign in Gagal!');
     }
 
     public function signout()

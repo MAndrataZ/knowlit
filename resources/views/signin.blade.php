@@ -30,7 +30,7 @@
             @csrf
 
             <div class="top-margin py-4">
-                <label>Alamat E-Mail<span class="text-danger">*</span></label>
+                <label>Alamat Email<span class="text-danger">*</span></label>
                 <input type="email" name="email" id="email" class="form-control-signin @error('email') is-invalid @enderror" placeholder="Masukkan Alamat E-mail Anda" autofocus required value="{{ old('email') }}">
                 @error('email')
                 <div class="invalid-feedback">

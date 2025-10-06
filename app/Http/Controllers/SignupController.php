@@ -23,6 +23,6 @@ class SignupController extends Controller
 
         User::create($validatedData);
         
-        return redirect('/signin')->with('success', 'Registration succesfull! Please sign in.');
+        return redirect('/signin')->with('success', 'Pendaftaran berhasil! Silahkan Sign in');
     }
 }

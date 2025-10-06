@@ -53,7 +53,7 @@
 
           <!-- Anggota 5 -->
           <div class="col-md-4 d-flex align-items-center mb-4">
-            <img src="img/indri2.jpg" alt="Foto Anggota 5" class="img-fluid rounded-circle me-3" style="width: 100px; height: 100px;">
+            <img src="img/indri.jpg" alt="Foto Anggota 5" class="img-fluid rounded-circle me-3" style="width: 100px; height: 100px;">
             <div>
                 <h5>Indri Tri Puspita</h5>
                 <p style="color: black;">NIM: 10122258</p>

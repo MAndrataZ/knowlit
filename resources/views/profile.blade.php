@@ -2,58 +2,75 @@
 
 @section('content')
 
-  <section id="hero" class="content">
-
+<section id="hero" class="content">
     <div class="container-fluid py-5 col-md-offset-4 col-md-4 col-md-offset-4 profile-form">
-      <div class="container">
-        <div class="col">
-          <h5 class="profile-title">Profile</h5>  
-        
+        <div class="container">
+            <div class="col">
+                <h5 class="profile-title">Profile</h5>
 
-          <div class = "form-group py-4">
-            <input type="file" name="" class="form-control-file">
-          </div>
+                @if(session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
 
-      <!--ISI FORM-->
-          <div class = "form-group">
-            <label>Username</label>
-            <input type="text" name="" class="form-control" id="Username">
-          </div>
-            
-            <div class = "form-group py-3">
-                <label>Firstname</label>
-                <input type="text" name="" class="form-control">
-          </div>
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-            <div class = "form-group">
-              <label>Lastname</label>
-              <input type="text" name="" class="form-control">
+                <form action="{{ route('profile.update') }}" method="POST">
+                  @csrf
+                  @method('PATCH')
+
+                  <!-- Menampilkan Username -->
+                  <div class="form-group">
+                      <label>Username</label>
+                      <input type="text" name="username" class="form-control" id="Username" value="{{ $user->username }}">
+                  </div>
+
+                  <!-- Menampilkan Email -->
+                  <div class="form-group py-3">
+                      <label>Email</label>
+                      <input type="email" name="email" class="form-control" value="{{ $user->email }}" readonly>
+                  </div>
+
+                  <button type="submit" class="btn btn-action profile-save-button" style="text-decoration:none">Save</button>
+              </form>
+
+                <hr>
+
+                <!-- Form untuk Mengubah Password -->
+                <h5 class="profile-title">Ubah Password</h5>
+                <form action="{{ route('profile.update_password') }}" method="POST">
+                    @csrf
+                    @method('PUT')
+
+                    <div class="form-group">
+                        <label>Password Lama</label>
+                        <input type="password" name="current_password" class="form-control" required>
+                    </div>
+
+                    <div class="form-group py-2">
+                        <label>Password Baru</label>
+                        <input type="password" name="new_password" class="form-control" required>
+                    </div>
+
+                    <div class="form-group py-2">
+                        <label>Konfirmasi Password</label>
+                        <input type="password" name="new_password_confirmation" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-action profile-save-button">Ubah Password</button>
+                </form>
             </div>
-
-      <!--FORM SELECT-->
-
-          <div class="form-group py-3">
-            <label>Gender</label>
-            <select class="form-control sex-option">
-            <option>Male</option>
-            <option>Female</option>
-            </select>
-          </div>
-
-              <div class = "form-group">
-              <label>Date of Birth</label>
-              <input type="date" name="" class="form-control">
-              </div>
-
-              <div class = "form-group py-3">
-              <label>Country</label>
-              <input type="text" name="" class="form-control">
-              </div>
-
-              <a href="" class="btn btn-action profile-save-button" style="text-decoration:none" type="submit">Save</a>
-              </div>
-            </div>
-      </div>
+        </div>
+    </div>
 </section>
 
 @endsection

@@ -15,7 +15,7 @@
                         </div>
                         <div class="card-body">
                             <p style="color: #000;">Dengan login Anda dapat mencoba fitur BookMark kami.</p>
-                            <a href="#bookmark" class="read-more btn" style="background-color: #AD8B73; color: #fff; text-decoration: none;">Coba Sekarang</a>
+                            <a href="{{ route('bookmark') }}" class="read-more btn" style="background-color: #AD8B73; color: #fff; text-decoration: none;">Coba Sekarang</a>
                         </div>
                     </div>
                 </div>
